@@ -10,13 +10,12 @@ import { IoMdCall } from "react-icons/io";
 import styles from "@/layout/Footer.module.css";
 import Link from "next/link";
 
-
 const Footer = () => {
   return (
     <div className={styles.container}>
       <img
         className={styles.backgroundImage}
-        src="/images/background-Image/Architecture-01.png"
+        src="/images/background/Architecture-01.png"
         alt="footer-background"
       />
       <div className={styles.footer}>
@@ -54,11 +53,31 @@ const Footer = () => {
             </ul>
           </section>
 
-          <section className={styles.footerItem2}>
+          <div className={styles.footerItem2}>
+            <h3 className={styles.footerItemHeader}>
+              Quick Links<span>.</span>
+            </h3>
+            <ul>
+              <li>
+                <Link href="/">Home</Link>
+              </li>
+              <li>
+                <Link href="/about">About</Link>
+              </li>
+              <li>
+                <Link href="/project">Works</Link>
+              </li>
+              <li>
+                <Link href="/contact">Contact</Link>
+              </li>
+            </ul>
+          </div>
+
+          <section className={styles.footerItem3}>
             <h3 className={styles.footerItemHeader}>
               Head Office<span>.</span>
             </h3>
-            <section className={styles.footerItem2Box}>
+            <section className={styles.footerItem3Box}>
               <section>
                 <IoLocation />
                 <a href="#">1422 Aqua blue Road st.aaaaaaaaa</a>
@@ -82,18 +101,11 @@ const Footer = () => {
           </section>
         </div>
         <div className={styles.footerBottom}>
-            <div className={styles.footerBottomLeft}>
-                <ul>
-                    <li><Link href='/'>Home</Link></li>
-                    <li><Link href="/about">About</Link></li>
-                    <li><Link href="/project">Works</Link></li>
-                    <li><Link href="/contact">Contact</Link></li>
-                </ul>
-            </div>
-
-            <div className={styles.footerBottomRight}>
-                <p>©2023 - Powered By <span>M.Shoubi</span></p>
-            </div>
+          <div className={styles.footerBottomRight}>
+            <p>
+              ©2024 - Powered By <span>M.Shoubi</span>
+            </p>
+          </div>
         </div>
       </div>
     </div>

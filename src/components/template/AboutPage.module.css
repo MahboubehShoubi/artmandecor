@@ -1,0 +1,160 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.context {
+  width: 1200px;
+}
+
+.titleBox {
+  width: 100%;
+  height: 80px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleBox img {
+  height: inherit;
+}
+
+.titleBox h1 {
+  text-align: center;
+  margin-left: -40px;
+  margin-top: 40px;
+  font-size: 2rem;
+}
+
+.titleBox span {
+  color: var(--yellow);
+}
+.context p {
+  line-height: 30px;
+}
+
+.aboutGalery {
+  width: 100%;
+}
+
+.aboutGaleryImg {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.aboutGalery img {
+  width: 32%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.aboutGalery :nth-child(1) {
+  object-position: top;
+}
+
+.aboutGaleryVideo {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.videoBoxMax {
+  width: 66%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.videoBoxMin {
+  display: none;
+}
+
+.imgLoh {
+  width: 32%;
+  height: 500px;
+}
+
+.imgLoh img {
+  width: 100%;
+  height: 100%;
+}
+
+/* ----------- media max-width 575.98px ------- */
+@media only screen and (max-width: 575.98px) {
+  .context {
+    width: 100%;
+  }
+
+  .context h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .context p {
+    line-height: 25px;
+    font-size: 0.9rem;
+    text-align: justify;
+  }
+
+  .aboutGalery {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .aboutGaleryImg {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    row-gap: 10px;
+  }
+
+  .aboutGalery img {
+    width: 100%;
+    height: 250px;
+  }
+
+  .aboutGaleryVideo {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .videoBoxMax {
+    display: none;
+  }
+
+  .videoBoxMin {
+    display: block;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+  }
+  .imgLoh {
+    width: 100%;
+    height: 500px;
+    margin-top: 10px;
+  }
+
+  .imgLoh img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}

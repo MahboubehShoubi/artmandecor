@@ -1,0 +1,285 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainText {
+  width: 1200px;
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.topContext {
+  text-align: center;
+  width: 40%;
+}
+
+.titleFrame {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleFrame img {
+  height: inherit;
+}
+
+.titleFrame p {
+  font-size: 0.8rem;
+  color: var(--gray-2);
+  margin-left: -50px;
+  margin-top: 40px;
+}
+
+.topContext h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 15px;
+  line-height: 3rem;
+}
+
+.information {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.information svg {
+  width: 30px;
+  height: 30px;
+}
+
+.infoBox1,
+.infoBox2,
+.infoBox3 {
+  margin-top: 50px;
+  width: 30%;
+  padding: 30px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  transition: all 400ms;
+  box-shadow: 0px 0px 15px 1px rgb(240, 239, 239);
+}
+
+.infoBox1,
+.infoBox3 {
+  background-image: linear-gradient(to right, rgb(244, 245, 199), white);
+}
+
+.infoBox1:hover,
+.infoBox3:hover {
+  background-image: linear-gradient(to right, var(--yellow), rgb(255, 218, 98));
+  color: white;
+}
+
+.infoBox2 {
+  background-image: linear-gradient(to right, var(--yellow), rgb(255, 218, 98));
+  color: white;
+}
+
+.infoBox2:hover {
+  color: rgb(0, 0, 0);
+}
+
+/* ---------- Bottom -------- */
+
+.bottomContext {
+  margin-top: 40px;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.googleMap {
+  width: 48%;
+  height: inherit;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.formBox {
+  width: 49%;
+  height: inherit;
+  padding: 30px 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.formBox span {
+  font-size: 0.6rem;
+  color: var(--gray-2);
+  letter-spacing: 2px;
+}
+
+.formBox p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+.formSendMessage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+  margin-top: 30px;
+}
+
+.formSendMessage section {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.formSendMessage section input {
+  padding: 10px;
+  border: none;
+  width: 48%;
+}
+
+.formSendMessage textarea {
+  padding: 5px;
+  border: none;
+  height: 120px;
+  width: 100%;
+}
+
+.formSendMessage button {
+    border-radius: 20px;
+  width: fit-content;
+  padding: 10px 20px;
+  background-color: var(--yellow);
+  color: white;
+  border: 2px solid #f8f9fa;
+  cursor: pointer;
+  transition: all 800ms;
+}
+
+.formSendMessage button:hover {
+  background-color: white;
+  color: var(--yellow);
+  border: 2px solid var(--yellow);
+}
+
+/* --------------- media max width 575.98px --------- */
+
+@media only screen and (max-width: 575.98px) {
+ 
+  .mainText {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .topContext {
+    text-align: center;
+    width: 100%;
+  }
+
+  .topContext h2 {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+  }
+
+  .information {
+    flex-direction: column;
+  }
+
+  .information svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .infoBox1,
+  .infoBox2,
+  .infoBox3 {
+    width: 100%;
+    margin-top: 30px;
+    padding: 20px;
+    line-height: 30px;
+  }
+
+  .information h3 {
+    font-size: 1.2rem;
+  }
+
+  .information p {
+    font-size: 0.9rem;
+  }
+
+  /* ---------- Bottom -------- */
+
+  .bottomContext {
+    flex-direction: column;
+    height: fit-content;
+    row-gap: 20px;
+  }
+
+  .googleMap {
+    width: 100%;
+    height: 300px;
+  }
+
+  .formBox {
+    width: 100%;
+    height: fit-content;
+    padding: 30px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+
+  .formBox p {
+    font-size: 1.2rem;
+    margin-top: 0;
+  }
+
+  /* .formSendMessage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    margin-top: 30px;
+  } */
+
+  .formSendMessage section {
+    row-gap: 10px;
+  }
+
+  .formSendMessage section input {
+    padding: 10px;
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  .formSendMessage textarea {
+    padding: 10px;
+    font-size: 0.8rem;
+  }
+
+  .formSendMessage button {
+    padding: 10px 30px;
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+
+}

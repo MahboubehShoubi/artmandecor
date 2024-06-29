@@ -1,0 +1,292 @@
+.headercontainer {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topHeader {
+  width: 1200px;
+  height: 50px;
+  padding: 10px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.topHeader h1 {
+  width: 100%;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.navbar {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navMenuMobil {
+  display: none;
+}
+
+.navMenuDesktop {
+  width: 1200px;
+  height: inherit;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 120px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  column-gap: 50px;
+}
+
+.menu li {
+  color: white;
+  transition: all 500ms;
+  font-size: 0.8rem;
+}
+
+.menu li:hover {
+  color: var(--yellow);
+}
+
+/* ------- slider ------ */
+.slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.ImgBackground {
+  filter: brightness(80%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* -------------------main Header----------------- */
+
+.mainHeader {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainHeader h2 {
+  width: 50%;
+  text-align: center;
+  color: white;
+  font-size: 4rem;
+}
+
+.mainHeader span {
+  color: var(--yellow);
+}
+
+
+
+
+/* --------- max-width : 575.98px ----- */
+@media only screen and (max-width: 575.98px) {
+  .headercontainer {
+    width: 100%;
+    height: 33vh;
+    position: relative;
+  }
+
+  .topHeader {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    background-color: black;
+  }
+  .topHeader h1 {
+    font-size: 0.5rem;
+    font-weight: 500;
+  }
+
+  .navbar {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    padding: 10px;
+  }
+
+  .navMenuDesktop {
+    display: none;
+  }
+
+  .navMenuMobil {
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+  }
+
+  .logo2 img {
+    width: 50px;
+  }
+
+  .hambergerMenu {
+    background-color: black;
+    color: white;
+    border: none;
+  }
+
+  .menuMobilBoxOpen {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 95%;
+    height: 80vh;
+    background-image: linear-gradient(to right, rgb(244, 245, 199), white);
+    color: black;
+    border: 1px solid white;
+    z-index: 999;
+    animation: openmenu 500ms;
+  }
+
+  @keyframes openmenu {
+    0% {
+      width: 0;
+      left: 0;
+    }
+    100% {
+      width: 95%;
+    }
+  }
+
+  .menuMobilBoxOpen .headerMenu , .menuMobilBoxClose .headerMenu{
+    width: 100%;
+    background-color: black;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menuMobilBoxOpen .headerMenu img , .menuMobilBoxClose .headerMenu img{
+    width: 50px;
+  }
+
+  .menuMobilBoxOpen .closeBtn , .menuMobilBoxClose .closeBtn{
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border: none;
+  }
+
+  .menuMobilBoxOpen .closeBtn svg , .menuMobilBoxClose .closeBtn svg{
+    width: 100%;
+    height: 100%;
+  }
+
+  .menuMobilBoxOpen .topBox ,.menuMobilBoxOpen .bottomBox ,
+  .menuMobilBoxClose .topBox ,.menuMobilBoxClose .bottomBox{
+    padding: 20px 20px 0;
+  }
+  .menuMobilBoxOpen .topBox ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+  }
+
+  .menuMobilBoxOpen .bottomBox , .menuMobilBoxClose .bottomBox{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .bottomBox svg {
+    width: 1.1rem;
+    height: 1.1rem;
+  }
+
+  .menuMobilBoxClose {
+    display: none;
+    position: absolute;
+    animation: closemenu 500ms;
+  }
+
+  @keyframes closemenu {
+    0% {
+      display: block;
+      top: 50px;
+      left: 0;
+      width: 95%;
+      height: 80vh;
+      background-image: linear-gradient(to right, rgb(244, 245, 199), white);
+      border: 2px solid white;
+      z-index: 999;
+    }
+
+    100% {
+      top: 50px;
+      width: 0;
+      display: none;
+    }
+  }
+
+  /* ------ slider ----- */
+  .slider {
+    position: absolute;
+    width: 100%;
+    height: 33vh;
+    z-index: -1;
+    overflow: hidden;
+    /* border-bottom: 5px solid blue;
+    background-color: aquamarine; */
+  }
+
+  .ImgBackground {
+    filter: brightness(60%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 11vh;
+
+    /* display: none; */
+  }
+
+  /* ------- main header -------*/
+  .mainHeader {
+    height: inherit;
+  }
+  .mainHeader h2 {
+    width: 80%;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+  }
+
+}

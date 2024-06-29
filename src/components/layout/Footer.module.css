@@ -1,7 +1,7 @@
 .container {
   width: 100%;
   position: relative;
-  height: 50vh;
+  height: 320px;
   display: flex;
   justify-content: center;
 }
@@ -21,8 +21,8 @@
 .footerTop {
   display: flex;
   justify-content: space-between;
-  align-items: start;
-  padding: 50px 20px;
+  align-items: flex-start;
+  padding: 50px 20px 0;
   width: 100%;
 }
 
@@ -44,7 +44,7 @@
 /*------- Item 1-------*/
 
 .footerItem1 p {
-  color: #bababa;
+  color: var(--grey);
   line-height: 25px;
   font-size: 14px;
 }
@@ -71,96 +71,71 @@
   transition: all 500ms;
 }
 .socialMediaFooter svg:hover {
-  background-color: #f6ae00;
+  background-color: var(--yellow);
 }
 
-/*------- Item2 --------*/
+/*------- Item3 --------*/
 
-.footerItem2Box {
+.footerItem3Box {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
 }
 
-.footerItem2 svg {
+.footerItem3 svg {
   width: 1.5rem;
   margin-right: 5px;
-  color: #f6ae00;
+  color: var(--yellow);
 }
 
-.footerItem2 a {
+.footerItem3 a {
   text-decoration: none;
   font-size: 1rem;
-  color: #bababa;
+  color: var(--grey);
 }
 
-/*------- Item 3 ------------*/
+/*------- Item 2 ------------*/
 
-/* .footerItem3Box{
-    display: flex;
-    flex-direction: column;
-    row-gap: 6px;
+.footerItem2 {
+  padding-left: 100px;
 }
 
-.footerItem3 a{
-    text-decoration: none;
-    font-size: 14px;
-    color: var(--gray-4);
-    transition: all 800ms;
-    width: fit-content;
-    display: flex;
-    align-items: center;
-} */
+.footerItem2 ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  row-gap: 15px;
+}
 
-/* .footerItem3 a:hover{
-    color: var(--orange);
+.footerItem2 li {
+  color: var(--grey);
+  font-size: 1.1rem;
 }
-.footerItem3 img{
-    width: 1rem;
+
+.footerItem2 li:hover {
+  color: var(--yellow);
 }
-/*------- Item 4---------*/
-/* .footerItem4 img{
-    width:250px;
-    filter: brightness(100%);
-}  */
 
 /*--------- footer bottom ---------*/
 
 .footerBottom {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 10px 50px;
-}
-
-.footerBottomLeft ul {
-  display: flex;
-  list-style: none;
-  column-gap: 28px;
-  padding: 0;
-}
-
-.footerBottomLeft ul a {
-  color: #bababa;
-  font-size: 14px;
-  transition: all 800ms;
-}
-
-.footerBottomLeft ul a:hover {
-  color: #f6ae00;
+  justify-content: flex-end;
 }
 
 .footerBottomRight p {
-  color: #bababa;
+  color: var(--grey);
   font-size: 14px;
+  width: fit-content;
 }
 
 .footerBottomRight span {
-  color: #f6ae00;
+  color: var(--yellow);
 }
 
-/* ------------- max-width : 400 px ----------- */
-@media only screen and (max-width: 400px) {
+/* ------------- max-width : 575.98px ----------- */
+@media only screen and (max-width: 575.98px) {
   .container {
     height: fit-content;
   }
@@ -206,69 +181,53 @@
 
   /*------- Item2 --------*/
 
-  .footerItem2Box {
-    row-gap: 8px;
+  .footerItem2 {
+    padding-left: 0;
   }
-
-  .footerItem2 svg {
-    width: 1.2rem;
+  
+  .footerItem2 ul {
+    row-gap: 10px;
+    padding: 0;
   }
-
-  .footerItem2 a {
-    font-size: 13px;
+  
+  .footerItem2 li {
+    font-size: 0.9rem;
   }
 
   /*------- Item 3 ------------*/
+  .footerItem3Box {
+    row-gap: 8px;
+  }
 
-  /* .footerItem3Box{
-        display: flex;
-        flex-direction: column;
-        row-gap: 6px;
+  .footerItem3 svg {
+    width: 1.2rem;
+  }
+
+  .footerItem3 a {
+    font-size: 13px;
+  }
+
+    /*--------- footer bottom ---------*/
+
+    .footerBottom {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      margin-top: 20px;
+      row-gap: 10px;
     }
-    
-    .footerItem3 a{
-        text-decoration: none;
-        font-size: 14px;
-        color: var(--gray-4);
-        transition: all 800ms;
-        width: fit-content;
-        display: flex;
-        align-items: center;
-    } */
 
-  /* .footerItem3 a:hover{
-        color: var(--orange);
+    .footerBottomLeft ul {
+      column-gap: 20px;
+      padding: 0;
     }
-    .footerItem3 img{
-        width: 1rem;
+
+    .footerBottomLeft ul a {
+      font-size: 12px;
     }
-    /*------- Item 4---------*/
-  /* .footerItem4 img{
-        width:250px;
-        filter: brightness(100%);
-    }  */
 
-  /*--------- footer bottom ---------*/
-
-  .footerBottom {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    margin-top: 20px;
-    row-gap: 10px;
+    .footerBottomRight p {
+      font-size: 10px;
+    }
   }
-
-  .footerBottomLeft ul {
-    column-gap: 20px;
-    padding: 0;
-  }
-
-  .footerBottomLeft ul a {
-    font-size: 12px;
-  }
-
-  .footerBottomRight p {
-    font-size: 10px;
-  }
-}
