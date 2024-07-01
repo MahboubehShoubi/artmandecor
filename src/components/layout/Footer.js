@@ -1,3 +1,8 @@
+"use client";
+
+import Link from "next/link";
+import Image from "next/image";
+
 import { FaFacebookF } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
@@ -8,45 +13,47 @@ import { BiSupport } from "react-icons/bi";
 import { IoMdCall } from "react-icons/io";
 
 import styles from "@/layout/Footer.module.css";
-import Link from "next/link";
 
 const Footer = () => {
   return (
     <div className={styles.container}>
-      <img
+      
+      <Image
         className={styles.backgroundImage}
         src="/images/background/Architecture-01.png"
         alt="footer-background"
+        width={1200}
+        height={350}
       />
       <div className={styles.footer}>
         <div className={styles.footerTop}>
           <section className={styles.footerItem1}>
             <h3 className={styles.footerItemHeader}>
-              Company in Lines<span>.</span>
+              Company in Lines<span className={styles.point}> .</span>
             </h3>
             <p>
-              The lysine contingency - it's intended to prevent the spread of
+              {`The lysine contingency - it's intended to prevent the spread of
               the animals is case they ever got off the island. Dr. Wu inserted
-              a gene that makes.
+              a gene that makes.`}
             </p>
             <ul className={styles.socialMediaFooter}>
               <li>
-                <a href="#">
+                <a href="#" target="-blank" rel="noreferrer">
                   <FaFacebookF />
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="#" target="-blank" rel="noreferrer">
                   <FaWhatsapp />
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="#" target="-blank" rel="noreferrer">
                   <FaInstagram />
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="#" target="-blank" rel="noreferrer">
                   <FaYoutube />
                 </a>
               </li>
@@ -55,7 +62,7 @@ const Footer = () => {
 
           <div className={styles.footerItem2}>
             <h3 className={styles.footerItemHeader}>
-              Quick Links<span>.</span>
+              Quick Links<span className={styles.point}> .</span>
             </h3>
             <ul>
               <li>
@@ -65,7 +72,7 @@ const Footer = () => {
                 <Link href="/about">About</Link>
               </li>
               <li>
-                <Link href="/project">Works</Link>
+                <Link href="/projects">Projects</Link>
               </li>
               <li>
                 <Link href="/contact">Contact</Link>
@@ -75,27 +82,27 @@ const Footer = () => {
 
           <section className={styles.footerItem3}>
             <h3 className={styles.footerItemHeader}>
-              Head Office<span>.</span>
+              Head Office<span className={styles.point}> .</span>
             </h3>
             <section className={styles.footerItem3Box}>
               <section>
                 <IoLocation />
-                <a href="#">1422 Aqua blue Road st.aaaaaaaaa</a>
+                <p>IRAN - Mazandaran - Nowshahr</p>
               </section>
 
               <section>
                 <MdEmail />
-                <a href="#">admin@email.com</a>
+                <p>artmandecor006@gmail.com</p>
               </section>
 
               <section>
                 <BiSupport />
-                <a href="#">support@email.com</a>
+                <p>mnel79@yahoo.com</p>
               </section>
 
               <section>
                 <IoMdCall />
-                <a href="#">0123456789</a>
+                <p>+989214201622</p>
               </section>
             </section>
           </section>
@@ -103,7 +110,8 @@ const Footer = () => {
         <div className={styles.footerBottom}>
           <div className={styles.footerBottomRight}>
             <p>
-              ©2024 - Powered By <span>M.Shoubi</span>
+              {` © 2024 - Powered By`}
+              <span> M.Shoubi</span>
             </p>
           </div>
         </div>

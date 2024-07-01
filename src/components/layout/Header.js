@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import Image from "next/image";
+import { useState } from "react";
 
 import Styles from "@/layout/Header.module.css";
 
@@ -30,22 +31,21 @@ function Header(props) {
     }
   };
 
- 
-
   return (
     <div
       className={Styles.headerPageContainer}
       onClick={closeHambergerMenuHandler}
     >
       <div className={Styles.headerTop}>
-        <p className={Styles.textDescription}>
-          Apparently we had reached a great height in the atmosphere, for the
-          sky was a dead black
-        </p>
-
+       
         <div className={Styles.logo}>
           <Link href="/">
-            <img src="/images/logo/Artmanlogo2.png" />
+            <Image
+              src="/images/logo/Artmanlogo2.png"
+              width={800}
+              height={500}
+              alt="logo"
+            />
           </Link>
         </div>
 
@@ -57,7 +57,7 @@ function Header(props) {
               </section>
               <section className={Styles.itemRightText}>
                 <span>Find Us</span>
-                <span>325 admirat unit,North cost,USA</span>
+                <span>Nowshahr,Mazandaran,IRAN</span>
               </section>
             </section>
           </div>
@@ -69,7 +69,7 @@ function Header(props) {
               </section>
               <section className={Styles.itemRightText}>
                 <span>Email</span>
-                <span>admin@bbbbbbbb.com</span>
+                <span>artmandecor006@gmail.com</span>
               </section>
             </section>
           </div>
@@ -81,7 +81,7 @@ function Header(props) {
               </section>
               <section className={Styles.itemRightText}>
                 <span>call us now</span>
-                <span>0123456789</span>
+                <span>+989214201622</span>
               </section>
             </section>
           </div>
@@ -93,7 +93,12 @@ function Header(props) {
       <div className={Styles.navbar}>
         <div className={Styles.navMenuMobil}>
           <Link href="/" className={Styles.logo2}>
-            <img src="/images/logo/Artmanlogo2.png" alt="logo" />
+            <Image
+              src="/images/logo/Artmanlogo2.png"
+              width={1000}
+              height={700}
+              alt="logo"
+            />
           </Link>
 
           <button
@@ -103,16 +108,29 @@ function Header(props) {
             {!isShow && <FaBars />}
           </button>
 
-          <div className={isShow ? `${Styles.menuMobilBoxOpen}`
-                                : `${Styles.menuMobilBoxClose}` } >
-         
+          <div
+            className={
+              isShow
+                ? `${Styles.menuMobilBoxOpen}`
+                : `${Styles.menuMobilBoxClose}`
+            }
+          >
             <section className={Styles.navBoxMenu}>
               <div className={Styles.headerMenu}>
+                {isShow ? (
+                  <Image
+                    src="/images/logo/Artmanlogo2.png"
+                    width={1000}
+                    height={700}
+                    alt="logo"
+                  />
+                ) : null}
 
-                {isShow ? <img src="/images/logo/Artmanlogo2.png" /> : null}
-                
-                <button className={Styles.closeBtn} onClick={(e) => setIsShow(!isShow)}>
-                   <IoMdClose />
+                <button
+                  className={Styles.closeBtn}
+                  onClick={(e) => setIsShow(!isShow)}
+                >
+                  <IoMdClose />
                 </button>
               </div>
               <div className={Styles.topBox}>
@@ -188,7 +206,13 @@ function Header(props) {
       {/* <!---------------------  Main Header ------------------> */}
 
       <div className={Styles.headerMain}>
-        <img className={Styles.headermainImg} src={imgheader} alt="imgHeader" />
+        <Image
+          className={Styles.headermainImg}
+          src={imgheader}
+          width={1000}
+          height={500}
+          alt="imgHeader"
+        />
         <div className={Styles.headerMainContent}>
           <div className={Styles.mainContent}>
             <div className={Styles.headerLeft}>
@@ -199,9 +223,7 @@ function Header(props) {
               <MdHome />
               <Link href="/">Home</Link>
               <span> / </span>
-              <a href="#" className={Styles.rightLink}>
-                {part3}
-              </a>
+              <span className={Styles.rightLink}>{part3}</span>
             </div>
           </div>
         </div>

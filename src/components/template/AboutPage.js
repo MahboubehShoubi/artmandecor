@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import SuccessWork from "@/module/SuccessWork";
 import VideoPlayer from "@/module/VideoPlayer";
 import style from "@/template/AboutPage.module.css";
@@ -11,8 +12,15 @@ function AboutPage() {
       <div className={style.container}>
         <div className={style.context}>
           <div className={style.titleBox}>
-            <img src="/images/logo/frame.png" alt="frame" />
-            <h1>About <span>Us</span></h1>
+            <Image
+              src="/images/logo/frame.png"
+              alt="frame"
+              width={100}
+              height={100}
+            />
+            <h1>
+              About <span>Us</span>
+            </h1>
           </div>
           <p>
             Apparently we had reached a great height in the atmosphere, for the
@@ -39,19 +47,48 @@ function AboutPage() {
           </p>
           <div className={style.aboutGalery}>
             <div className={style.aboutGaleryImg}>
-              <img src="/images/about/commendation/1.jpg" />
-              <img src="/images/about/commendation/3.jpg" />
-              <img src="/images/about/personal/5.jpg" />
+              <div className={style.aboutGaleryImgBox}>
+                <Image
+                  src="/images/about/commendation/1.jpg"
+                  alt="commendation image"
+                  className={style.aboutImg}
+                  width={1000}
+                  height={700}
+                />
+              </div>
+              <div className={style.aboutGaleryImgBox}>
+                <Image
+                  src="/images/about/commendation/loh2.jpg"
+                  alt="image loh"
+                  className={style.lohImg}
+                  width={1000}
+                  height={700}
+                />
+              </div>
+              <div className={style.aboutGaleryImgBox}>
+                <Image
+                  src="/images/about/commendation/3.jpg"
+                  alt="commendation image"
+                  className={style.aboutImg}
+                  width={1000}
+                  height={700}
+                />
+              </div>
             </div>
             <div className={style.aboutGaleryVideo}>
               <div className={style.videoBoxMax}>
-                <VideoPlayer width={700} height={500} src="/video/film.mp4"/>
+                <VideoPlayer width={700} height={500} src="/video/film.mp4" />
               </div>
               <div className={style.videoBoxMin}>
-                <VideoPlayer  height={300} src="/video/film.mp4" />
+                <VideoPlayer height={300} src="/video/film.mp4" />
               </div>
               <div className={style.imgLoh}>
-                <img src="/images/about/personal/Loh.jpg" />
+                <Image
+                  src="/images/about/commendation/loh.jpg"
+                  alt="letter of commendation"
+                  width={500}
+                  height={1000}
+                />
               </div>
             </div>
           </div>

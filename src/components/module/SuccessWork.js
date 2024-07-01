@@ -1,5 +1,6 @@
 import styles from "@/module/SuccessWork.module.css";
 import Counter from "@/module/Counter";
+import Image from "next/image";
 
 const SuccessWork = () => {
   return (
@@ -7,16 +8,16 @@ const SuccessWork = () => {
       <div className={styles.main}>
         <div className={styles.boxLeft}>
           <section className={styles.imgBottom}>
-            <img src="/Images/about/img4.jpg" />
+            <Image src="/images/about/img4.jpg" alt="image cobinet" width={1000} height={700}/>
           </section>
           <section className={styles.imgTop}>
-            <img src="/Images/about/img2.jpg" />
+            <Image src="/images/about/img2.jpg" alt="image cobinet" width={1000} height={700}/>
           </section>
         </div>
 
         <div className={styles.boxRight}>
-          <section className={styles.boxLeftTop}>
-            <img src="/Images/about/SuccessWork.png" />
+          <section>
+            <Image src="/images/about/SuccessWork.png" alt="description image" width={1000} height={700}/>
           </section>
           <p>
             Apparently we had reached a great height in the atmosphere, for the

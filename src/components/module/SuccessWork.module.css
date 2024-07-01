@@ -57,6 +57,7 @@
 
 .boxRight img{
     width: 30%;
+    height: 100px;
 }
 
 .boxRight p{
@@ -79,7 +80,7 @@
 }
 .counter :nth-child(1){
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: 900;
 }
 
 .counter :nth-child(2){

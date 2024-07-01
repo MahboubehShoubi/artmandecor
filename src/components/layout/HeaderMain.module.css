@@ -51,6 +51,7 @@
 
 .logo img {
   width: 100%;
+  height: 65px;
 }
 
 .menu {
@@ -118,10 +119,9 @@
 
   .topHeader {
     width: 100%;
-    height: 50px;
-    padding: 10px;
-    background-color: black;
+    height: 20px;
   }
+  
   .topHeader h1 {
     font-size: 0.5rem;
     font-weight: 500;
@@ -149,6 +149,7 @@
 
   .logo2 img {
     width: 50px;
+    height: 25px;
   }
 
   .hambergerMenu {
@@ -159,7 +160,7 @@
 
   .menuMobilBoxOpen {
     position: absolute;
-    top: 50px;
+    top: 20px;
     left: 0;
     width: 95%;
     height: 80vh;
@@ -180,7 +181,8 @@
     }
   }
 
-  .menuMobilBoxOpen .headerMenu , .menuMobilBoxClose .headerMenu{
+  .menuMobilBoxOpen .headerMenu ,
+   .menuMobilBoxClose .headerMenu{
     width: 100%;
     background-color: black;
     padding: 10px 15px;
@@ -189,8 +191,10 @@
     align-items: center;
   }
 
-  .menuMobilBoxOpen .headerMenu img , .menuMobilBoxClose .headerMenu img{
+  .menuMobilBoxOpen .headerMenu img ,
+   .menuMobilBoxClose .headerMenu img{
     width: 50px;
+    height: 25px;
   }
 
   .menuMobilBoxOpen .closeBtn , .menuMobilBoxClose .closeBtn{
@@ -241,7 +245,7 @@
   @keyframes closemenu {
     0% {
       display: block;
-      top: 50px;
+      top: 20px;
       left: 0;
       width: 95%;
       height: 80vh;
@@ -251,7 +255,7 @@
     }
 
     100% {
-      top: 50px;
+      top: 20px;
       width: 0;
       display: none;
     }
@@ -264,8 +268,7 @@
     height: 33vh;
     z-index: -1;
     overflow: hidden;
-    /* border-bottom: 5px solid blue;
-    background-color: aquamarine; */
+    margin-top: -30px;
   }
 
   .ImgBackground {
@@ -274,8 +277,6 @@
     height: 100%;
     object-fit: cover;
     margin-top: 11vh;
-
-    /* display: none; */
   }
 
   /* ------- main header -------*/

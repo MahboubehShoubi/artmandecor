@@ -23,7 +23,7 @@ const Counter = ({max , time}) => {
 
     return (
         <div>
-            <h1>{number}</h1>
+            <span>{number}</span>
         </div>
     );
 };

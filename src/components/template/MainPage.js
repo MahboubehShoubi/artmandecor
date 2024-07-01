@@ -1,12 +1,18 @@
 "use client";
 
+import Link from "next/link";
+import Image from "next/image";
+
+// components
 import SuccessWork from "@/module/SuccessWork";
+
+// Styles css
+import style from "@/template/MainPage.module.css";
 
 // Cobinets icons
 import { MdOutlineSoupKitchen } from "react-icons/md";
 
 // the Closet icons
-import { BiCloset } from "react-icons/bi";
 import { MdCurtainsClosed } from "react-icons/md";
 
 // Tv Stand icons
@@ -15,17 +21,18 @@ import { PiTelevisionBold } from "react-icons/pi";
 // desk icons
 import { PiDesk } from "react-icons/pi";
 
-// Styles css
-import style from "@/template/MainPage.module.css";
-import Link from "next/link";
-
 const MainPage = () => {
   return (
     <div className={style.container}>
       <SuccessWork />
       <div className={style.mainSection}>
         <div className={style.servicess}>
-          <img src="/images/background/about.png" />
+          <Image
+            src="/images/background/about.png"
+            alt="background img"
+            width={2500}
+            height={1080}
+          />
           <div className={style.servicessContext}>
             <div className={style.topServicess}>
               <h3>OUR SERVICES</h3>
@@ -63,13 +70,12 @@ const MainPage = () => {
 
               <div className={style.boxServices}>
                 <div className={style.box}>
-                  <PiTelevisionBold />                  
+                  <PiTelevisionBold />
                   <p>
                     <span>04 </span>TV STAND
                   </p>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
@@ -77,14 +83,18 @@ const MainPage = () => {
         <div className={style.gallery}>
           <div className={style.mainGallery}>
             <div className={style.leftBox}>
-              <img src="/images/kitchen/kitchen-31.jpg" />
+              <Image
+                src="/images/kitchen/kitchen-31.jpg"
+                alt="gallery image"
+                width={2500}
+                height={1080}
+              />
             </div>
             <div className={style.rightBox}>
               <div className={style.rightTopContect}>
                 <span>Why Choice Us</span>
                 <h3>
-                  We Give The Great Offer Pricing With Our Professionals Team
-                  Certification
+                  We guarantee you the best prices with our team of experts
                 </h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
@@ -93,10 +103,30 @@ const MainPage = () => {
                 </p>
               </div>
               <div className={style.rightCenterContect}>
-                <img src="/images/desk/desk-3.jpg" />
-                <img src="/images/closet/Wall-closet-9.jpg" />
-                <img src="/images/other/other-2.jpg" />
-                <img src="/images/kitchen/kitchen-29.jpg" />
+                <Image
+                  src="/images/desk/desk-3.jpg"
+                  alt="gallery image"
+                  width={2500}
+                  height={1080}
+                />
+                <Image
+                  src="/images/closet/Wall-closet-9.jpg"
+                  alt="gallery image"
+                  width={2500}
+                  height={1080}
+                />
+                <Image
+                  src="/images/other/other-2.jpg"
+                  alt="gallery image"
+                  width={2500}
+                  height={1080}
+                />
+                <Image
+                  src="/images/kitchen/kitchen-29.jpg"
+                  alt="gallery image"
+                  width={2500}
+                  height={1080}
+                />
               </div>
               <div className={style.rightbottomContect}>
                 <Link href="/projects" className={style.linkProject}>

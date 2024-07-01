@@ -39,6 +39,12 @@
   font-size: 1.3rem;
   color: white;
   margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.point{
+  color: var(--yellow);
+  font-size: 2rem;
 }
 
 /*------- Item 1-------*/
@@ -79,7 +85,10 @@
 .footerItem3Box {
   display: flex;
   flex-direction: column;
-  row-gap: 10px;
+}
+
+.footerItem3Box > section{
+  display: flex;
 }
 
 .footerItem3 svg {
@@ -88,8 +97,7 @@
   color: var(--yellow);
 }
 
-.footerItem3 a {
-  text-decoration: none;
+.footerItem3 p {
   font-size: 1rem;
   color: var(--grey);
 }
@@ -98,6 +106,9 @@
 
 .footerItem2 {
   padding-left: 100px;
+  /* display: flex;
+  flex-direction: column;
+  align-items: flex-start; */
 }
 
 .footerItem2 ul {
@@ -105,6 +116,8 @@
   flex-direction: column;
   list-style: none;
   row-gap: 15px;
+  margin: 0;
+  padding: 0;
 }
 
 .footerItem2 li {
