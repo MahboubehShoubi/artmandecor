@@ -57,7 +57,7 @@ function Header(props) {
               </section>
               <section className={Styles.itemRightText}>
                 <span>Find Us</span>
-                <span>Nowshahr,Mazandaran,IRAN</span>
+                <span>Nowshahr/Mazandaran/IRAN</span>
               </section>
             </section>
           </div>

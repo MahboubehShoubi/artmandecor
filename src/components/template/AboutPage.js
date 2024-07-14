@@ -5,6 +5,17 @@ import SuccessWork from "@/module/SuccessWork";
 import VideoPlayer from "@/module/VideoPlayer";
 import style from "@/template/AboutPage.module.css";
 
+// Icons
+import { GrUserWorker } from "react-icons/gr";
+import { TbTools } from "react-icons/tb";
+import { GiWoodenCrate } from "react-icons/gi";
+import { BiSolidCabinet } from "react-icons/bi";
+import { MdDoorSliding } from "react-icons/md";
+import { RiTableAltFill } from "react-icons/ri";
+import { ImOffice } from "react-icons/im";
+import { MdOutlineAddHomeWork } from "react-icons/md";
+
+
 function AboutPage() {
   return (
     <>
@@ -22,29 +33,92 @@ function AboutPage() {
               About <span>Us</span>
             </h1>
           </div>
-          <p>
-            Apparently we had reached a great height in the atmosphere, for the
-            sky was a dead black, and the stars had ceased to twinkle. By the
-            same illusion which lifts the horizon of the sea to the level of the
-            spectator on a hillside.Apparently we had reached a great height in
-            the atmosphere, for the sky was a dead black, and the stars had
-            ceased to twinkle. By the same illusion which lifts the horizon of
-            the sea to the level of the spectator on a hillsideApparently we had
-            reached a great height in the atmosphere, for the sky was a dead
-            black, and the stars had ceased to twinkle. By the same illusion
-            which lifts the horizon of the sea to the level of the spectator on
-            a hillsideApparently we had reached a great height in the
-            atmosphere, for the sky was a dead black, and the stars had ceased
-            to twinkle. By the same illusion which lifts the horizon of the sea
-            to the level of the spectator on a hillsideApparently we had reached
-            a great height in the atmosphere, for the sky was a dead black, and
-            the stars had ceased to twinkle. By the same illusion which lifts
-            the horizon of the sea to the level of the spectator on a
-            hillsideApparently we had reached a great height in the atmosphere,
-            for the sky was a dead black, and the stars had ceased to twinkle.
-            By the same illusion which lifts the horizon of the sea to the level
-            of the spectator on a hillside
-          </p>
+          <div className={style.textBox}>
+            <p className={style.topText}>
+              ArtmanDecor with 17 years of continuous experience in designing,
+              manufacturing and implementing all kinds of kitchen cabinets,
+              including classic, modern and neoclassical cabinets, as well as
+              home interior decoration, store and exhibition decoration, we
+              guarantee the best quality by using the following items.
+            </p>
+          </div>
+          <div className={style.employeeBox}>
+            <div className={style.employeeBoxText}>
+              <div>
+                <GrUserWorker />
+                <p>Experienced and expert staff</p>
+              </div>
+            </div>
+            <div className={style.employeeBoxImg}>
+              <Image
+                src="/images/about/employee.jpg"
+                width={1000}
+                height={800}
+                alt="About Image"
+              />
+            </div>
+          </div>
+
+          <div className={style.materialsBox}>
+            <div className={style.materialsBoxText}>
+              <div>
+                <GiWoodenCrate />
+                <p>Using the best brands of raw materials</p>
+              </div>
+            </div>
+            <div className={style.materialsBoxImg}>
+              <Image
+                src="/images/about/material.jpg"
+                width={1000}
+                height={800}
+                alt="About Image"
+              />
+            </div>
+          </div>
+
+          <div className={style.machineryBox}>
+            <div className={style.machineryBoxText}>
+              <div>
+                <TbTools />
+                <p>Advanced modern machinery and tools</p>
+              </div>
+            </div>
+            <div className={style.machineryBoxImg}>
+              <Image
+                src="/images/about/machinery.jpg"
+                width={1000}
+                height={800}
+                alt="About Image"
+              />
+            </div>
+          </div>
+
+          <div className={style.textBoxBottom}>
+            <h4>Artman Decor products:</h4>
+            <ul>
+              <li>
+                <BiSolidCabinet />
+                Kitchen cabinet ( classic - neoclassic - modern )
+              </li>
+              <li>
+                <MdDoorSliding />
+                Closets and wallclosets ( rail door - open, etc. )
+              </li>
+              <li>
+                <RiTableAltFill />
+                Store decor ( shelf - counter, etc. )
+              </li>
+              <li>
+                <ImOffice />
+                Office decor ( desk - files, etc. )
+              </li>
+              <li>
+                <MdOutlineAddHomeWork />
+                Home decor ( TV box - partition, etc. )
+              </li>
+            </ul>
+          </div>
+
           <div className={style.aboutGalery}>
             <div className={style.aboutGaleryImg}>
               <div className={style.aboutGaleryImgBox}>
@@ -77,10 +151,10 @@ function AboutPage() {
             </div>
             <div className={style.aboutGaleryVideo}>
               <div className={style.videoBoxMax}>
-                <VideoPlayer width={700} height={500} src="/video/film.mp4" />
+                <VideoPlayer width={700} height={500} src="/video/film.mp4" poster="/images/about/commendation/film1.jpg"/>
               </div>
               <div className={style.videoBoxMin}>
-                <VideoPlayer height={300} src="/video/film.mp4" />
+                <VideoPlayer height={300} src="/video/film.mp4" poster="/images/about/commendation/film1.jpg"/>
               </div>
               <div className={style.imgLoh}>
                 <Image

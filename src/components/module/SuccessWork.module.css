@@ -74,18 +74,22 @@
     align-items: center;
 }
 .counter{
+    width: fit-content;
+    height: 80px;
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
+    justify-content: space-between;
 }
 .counter :nth-child(1){
     font-size: 2rem;
     font-weight: 900;
+    height: 50px;
 }
 
 .counter :nth-child(2){
     color: var(--gray-3);
     font-size: 15px;
+    height: 25px;
 }
 
 
@@ -137,15 +141,18 @@
     }
     
     .counter{
-        row-gap: 5px;
+        height: 60px;
+        align-items: center;
     }
     
     .counter :nth-child(1){
         font-size: 1.3rem;
+        height: 40px;
     }
     
     .counter :nth-child(2){
         color: var(--gray-3);
         font-size: 10px;
+        height: 20px;
     }
 }

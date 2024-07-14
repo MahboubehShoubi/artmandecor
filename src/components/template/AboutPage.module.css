@@ -9,6 +9,11 @@
 
 .context {
   width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
 }
 
 .titleBox {
@@ -34,9 +39,110 @@
 .titleBox span {
   color: var(--yellow);
 }
-.context p {
+
+.textBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topText {
+  width: 80%;
+  text-align: justify;
   line-height: 30px;
 }
+
+.employeeBox,
+.materialsBox,
+.machineryBox {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.employeeBoxText,
+.materialsBoxText,
+.machineryBoxText {
+  width: 48%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.employeeBoxText div,
+.materialsBoxText div,
+.machineryBoxText div {
+  display: flex;
+  align-items: baseline;
+  column-gap: 10px;
+}
+
+.employeeBoxText svg,
+.materialsBoxText svg,
+.machineryBoxText svg {
+  width: 50px;
+  height: 50px;
+  color: var(--yellow);
+}
+
+.employeeBoxText p,
+.materialsBoxText p,
+.machineryBoxText p {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.employeeBoxImg,
+.materialsBoxImg,
+.machineryBoxImg {
+  width: 48%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.employeeBoxImg img,
+.materialsBoxImg img,
+.machineryBoxImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* --------------textBoxBottom----------------- */
+.textBoxBottom {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.textBoxBottom h4 {
+  font-weight: 900;
+  font-size: 1.7rem;
+}
+
+.textBoxBottom ul {
+  list-style: none;
+  margin-top: 30px;
+}
+
+.textBoxBottom li {
+  display: flex;
+  align-items: baseline;
+  column-gap: 6px;
+  color: black;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.textBoxBottom svg {
+  color: var(--yellow);
+  width: 20px;
+  height: 20px;
+}
+
+/* -------------About Galery---------------- */
 
 .aboutGalery {
   width: 100%;
@@ -55,16 +161,16 @@
   height: 250px;
 }
 
-.aboutGaleryImgBox img{
+.aboutGaleryImgBox img {
   width: 100%;
   height: 100%;
 }
 
-.aboutImg{
+.aboutImg {
   object-fit: cover;
 }
 
-.lohImg{
+.lohImg {
   object-fit: contain;
 }
 
@@ -112,12 +218,106 @@
     text-align: center;
     margin-bottom: 20px;
   }
-  .context p {
-    line-height: 25px;
-    font-size: 0.9rem;
-    text-align: justify;
+
+  /* ---------------------------------------- */
+
+  .textBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
+  .topText {
+    width: 90%;
+    line-height: 25px;
+    font-size: 0.9rem;
+  }
+
+  .employeeBox,
+  .materialsBox,
+  .machineryBox {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .employeeBoxText,
+  .materialsBoxText,
+  .machineryBoxText {
+    width: 90%;
+    height: 60px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .employeeBoxText div,
+  .materialsBoxText div,
+  .machineryBoxText div {
+    width: 100%;
+    height: 100%;
+    column-gap: 10px;
+  }
+
+  .employeeBoxText div {
+    align-items: baseline;
+  }
+
+  .materialsBoxText div,
+  .machineryBoxText div {
+    align-items: flex-start;
+  }
+
+  .employeeBoxText svg,
+  .materialsBoxText svg,
+  .machineryBoxText svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .employeeBoxText p,
+  .materialsBoxText p,
+  .machineryBoxText p {
+    font-size: 1rem;
+  }
+
+  .employeeBoxImg,
+  .materialsBoxImg,
+  .machineryBoxImg {
+    width: 100%;
+    height: 240px;
+  }
+
+  /* --------------textBoxBottom----------------- */
+  .textBoxBottom {
+    width: 90%;
+    margin-top: 0;
+  }
+
+  .textBoxBottom h4 {
+    font-size: 1.4rem;
+  }
+
+  .textBoxBottom ul {
+    margin-top: 20px;
+    padding: 0;
+  }
+
+  .textBoxBottom li {
+    align-items: baseline;
+    column-gap: 5px;
+    margin-bottom: 7px;
+    font-weight: 500;
+    margin-left: 10px;
+  }
+
+  .textBoxBottom svg {
+    color: var(--yellow);
+    width: 20px;
+    height: 20px;
+  }
+
+  /* ----------------- galery ----------- */
   .aboutGalery {
     width: 100%;
     display: flex;

@@ -14,10 +14,10 @@ import {
 
 import "node_modules/video-react/dist/video-react.css";
 
-const VideoPlayer = ({ width, height , src}) => {
+const VideoPlayer = ({ width, height , src , poster}) => {
   return (
     <Player
-      // poster="/images/about/personal/4.jpg"
+      poster={poster}
       fluid={false}
       width={width}
       height={height}

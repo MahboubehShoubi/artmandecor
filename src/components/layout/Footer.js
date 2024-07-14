@@ -29,12 +29,13 @@ const Footer = () => {
         <div className={styles.footerTop}>
           <section className={styles.footerItem1}>
             <h3 className={styles.footerItemHeader}>
-              Company in Lines<span className={styles.point}> .</span>
+              Company<span className={styles.point}>.</span>
             </h3>
             <p>
-              {`The lysine contingency - it's intended to prevent the spread of
-              the animals is case they ever got off the island. Dr. Wu inserted
-              a gene that makes.`}
+              {`17 years of continuous experience in designing,
+               manufacturing and implementing all 
+               kinds of cabinets, home interior decoration,
+               store and exhibition decorations`}
             </p>
             <ul className={styles.socialMediaFooter}>
               <li>
@@ -62,7 +63,7 @@ const Footer = () => {
 
           <div className={styles.footerItem2}>
             <h3 className={styles.footerItemHeader}>
-              Quick Links<span className={styles.point}> .</span>
+              Quick Links<span className={styles.point}>.</span>
             </h3>
             <ul>
               <li>
@@ -82,12 +83,12 @@ const Footer = () => {
 
           <section className={styles.footerItem3}>
             <h3 className={styles.footerItemHeader}>
-              Head Office<span className={styles.point}> .</span>
+              Head Office<span className={styles.point}>.</span>
             </h3>
             <section className={styles.footerItem3Box}>
               <section>
                 <IoLocation />
-                <p>IRAN - Mazandaran - Nowshahr</p>
+                <p>Nowshahr/Mazandaran/IRAN</p>
               </section>
 
               <section>
@@ -111,7 +112,7 @@ const Footer = () => {
           <div className={styles.footerBottomRight}>
             <p>
               {` © 2024 - Powered By`}
-              <span> M.Shoubi</span>
+              <a href="https://shoubi.ir" target="_blank" rel="noreferrer"> M.Shoubi</a>
             </p>
           </div>
         </div>

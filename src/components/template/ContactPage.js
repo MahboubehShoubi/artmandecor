@@ -29,7 +29,7 @@ function ContactPage() {
           <div className={style.infoBox1}>
             <SlLocationPin />
             <h3>Head Office Address</h3>
-            <p>Mazandaran-Nowshahr</p>
+            <p>Nowshahr/Mazandaran</p>
           </div>
           <div className={style.infoBox2}>
             <TfiEmail />
@@ -39,7 +39,7 @@ function ContactPage() {
           <div className={style.infoBox3}>
             <BsTelephone />
             <h3>Official Telephone</h3>
-            <p>+9891111111</p>
+            <p>+989214201622</p>
           </div>
         </div>
 

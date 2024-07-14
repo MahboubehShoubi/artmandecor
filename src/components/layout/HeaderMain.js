@@ -165,8 +165,9 @@ const HeaderMain = () => {
       </div>
 
       <div className={style.mainHeader}>
+        <h1>ARTMANDECOR PRODUCTS</h1>
         <h2>
-          <span>ENGINEERING</span> YOUR DREAMS WITH US
+          A MIXTURE OF ART AND INDUSTRY
         </h2>
       </div>
     </div>

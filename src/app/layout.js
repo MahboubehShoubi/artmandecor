@@ -1,7 +1,6 @@
-import { Inter , Roboto } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
 
-// const inter = Inter({ subsets: ["latin"] });
 const roboto = Roboto({subsets:["latin"] , weight:"300"});
 
 export const metadata = {
@@ -10,6 +9,7 @@ export const metadata = {
   authors: [{ name: 'Mahboubeh Shoubi', url: 'https://shoubi.ir' }], 
   creator: 'Mahboubeh Shoubi',
   keywords: ['Cobinet', 'ShowCase', 'Closet' , 'Tv Stand', 'Design' ,'kitchen' , 'CNC'],
+  icons: { icon:"./favicon.ico" },
 };
 
 export default function RootLayout({ children }) {
@@ -22,7 +22,6 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className={roboto.className} >{children}</body>
-      {/* <body className={inter.className} >{children}</body> */}
     </html>
   );
 }

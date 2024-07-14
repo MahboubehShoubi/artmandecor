@@ -38,12 +38,15 @@ function ProjectsPage() {
                             src="/video/film-kitchen.mp4"
                             height={625}
                             width={400}
+                            poster="/images/about/commendation/film2.jpg"
                           />
                         </div>
                         <div className="d-none d-sm-block">
                           <VideoPlayer
                             src="/video/film-kitchen.mp4"
                             height={625}
+                            width={400}
+                            poster="/images/about/commendation/film2.jpg"
                           />
                         </div>
                       </Col>
@@ -440,8 +443,17 @@ function ProjectsPage() {
                       />
                     </Col>
                   </Row>
-                  <Row className="d-flex justify-content-between mb-4">
-                    <Col xs={12} md={12} lg={12}>
+                  <Row className="d-flex justify-content-between mb-4 row-gap-4">
+                    <Col xs={12} md={4} lg={4}>
+                      <Image
+                        src="/images/showcase/showcase-5.jpg"
+                        alt="Closet image"
+                        width={2500}
+                        height={1080}
+                        className="w-100 animate__animated animate__zoomIn"
+                      />
+                    </Col>
+                    <Col xs={12} md={8} lg={8}>
                       <Image
                         src="/images/showcase/showcase-1.jpg"
                         alt="Closet image"
@@ -549,7 +561,7 @@ function ProjectsPage() {
                               alt="Closet image"
                               width={2500}
                               height={1080}
-                              className="w-100 animate__animated animate__zoomIn"
+                              className="w-100 h-100 animate__animated animate__zoomIn"
                             />
                           </Col>
                           <Col xs={12} md={6} lg={6}>
@@ -558,7 +570,7 @@ function ProjectsPage() {
                               alt="Closet image"
                               width={2500}
                               height={1080}
-                              className="w-100 animate__animated animate__zoomIn"
+                              className="w-100 h-100 animate__animated animate__zoomIn"
                             />
                           </Col>
                         </Row>

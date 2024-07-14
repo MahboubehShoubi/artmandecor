@@ -9,11 +9,13 @@ import SuccessWork from "@/module/SuccessWork";
 // Styles css
 import style from "@/template/MainPage.module.css";
 
-// Cobinets icons
-import { MdOutlineSoupKitchen } from "react-icons/md";
+// Cabinets icons
+import { BiSolidCabinet } from "react-icons/bi";
+
 
 // the Closet icons
-import { MdCurtainsClosed } from "react-icons/md";
+import { MdDoorSliding } from "react-icons/md";
+
 
 // Tv Stand icons
 import { PiTelevisionBold } from "react-icons/pi";
@@ -43,9 +45,9 @@ const MainPage = () => {
             <div className={style.bottomServiceses}>
               <div className={style.boxServices}>
                 <div className={style.box}>
-                  <MdOutlineSoupKitchen />
+                  <BiSolidCabinet />
                   <p>
-                    <span>01 </span>KITCHEN CABINET
+                    KITCHEN CABINET
                   </p>
                 </div>
               </div>
@@ -54,16 +56,16 @@ const MainPage = () => {
                 <div className={style.box}>
                   <PiDesk />
                   <p>
-                    <span>02 </span>DESK
+                    DESK
                   </p>
                 </div>
               </div>
 
               <div className={style.boxServices}>
                 <div className={style.box}>
-                  <MdCurtainsClosed />
+                  <MdDoorSliding />
                   <p>
-                    <span>03 </span>ROOM CLOSET
+                    ROOM CLOSET
                   </p>
                 </div>
               </div>
@@ -72,7 +74,7 @@ const MainPage = () => {
                 <div className={style.box}>
                   <PiTelevisionBold />
                   <p>
-                    <span>04 </span>TV STAND
+                    TV STAND
                   </p>
                 </div>
               </div>
@@ -92,14 +94,13 @@ const MainPage = () => {
             </div>
             <div className={style.rightBox}>
               <div className={style.rightTopContect}>
-                <span>Why Choice Us</span>
-                <h3>
-                  We guarantee you the best prices with our team of experts
-                </h3>
+                <span>Why should you choose us?</span>
+                <h3>Guaranteed the best quality, with our team of experts</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                  elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
-                  leo.
+                  Artman Decor, producters kitchen cabinets and wardrobes and
+                  interior decoration products , It guarantees the best quality
+                  and the most suitable price in the presentation of its
+                  products.
                 </p>
               </div>
               <div className={style.rightCenterContect}>

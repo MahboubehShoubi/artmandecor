@@ -76,7 +76,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .boxServices svg {
@@ -89,10 +89,6 @@
   color: white;
   font-size: 1.2rem;
   margin-top: 20px;
-}
-
-.boxServices span {
-  color: var(--gray-2);
 }
 
 /* ---------------- gallery ------------------ */
@@ -136,7 +132,7 @@
   margin-top: 20px;
   font-size: 2rem;
   font-weight: 700;
-  width: 90%;
+  width: 80%;
 }
 
 .rightTopContect p {
@@ -144,10 +140,11 @@
   font-size: 15px;
   color: var(--gray-2);
   line-height: 25px;
+  width: 90%;
 }
 
 .rightCenterContect {
-  margin-top: 40px;
+  margin-top: 60px;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -248,14 +245,6 @@
 
 
   /* ---------------- gallery ------------------ */
-
-  /* .gallery {
-    margin: 100px 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } */
 
   .gallery {
     margin: 70px 0 ;
